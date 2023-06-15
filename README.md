@@ -6,7 +6,7 @@ Some notebooks use large language models to try to assess their performance in I
 
 ### OpenAI's GPT-3.5 Turbo
 
-Notebook [01]('01_nanodistribution-openai-qa.ipynb) uses the OpenAI API to answer the following questions for each available open access article reviewed by  Kumar _et al_, 2023:
+Notebook [01_nanodistribution-openai-qa.ipynb](https://github.com/jmillanacosta/distribution-nm-rdf/blob/master/notebooks/01_nanodistribution-openai-qa.ipynb) uses the OpenAI API to answer the following questions for each available open access article reviewed by  Kumar _et al_, 2023:
 
 ```
 Scan the following scientific article {full text/abstract} describing the use of animal models to investigate nanomaterial or nanoparticle biodistribution in organs to fill up the braces for each value (use 3 words max for each)
