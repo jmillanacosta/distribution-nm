@@ -36,7 +36,221 @@ Some big issues I see with the approach are:
 - The model is set to `temperature=0` to try to get the most deterministic answer possible, but a different answer is possible at each round
 - Data still needs to be curated afterwards, since the model does not stick to a specific lexicon -i.e., strains of mice reported correctly but inconsistently as follows:
 
-<table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="99"/><col width="99"/><col width="99"/><col width="99"/><col width="99"/><col width="99"/><col width="99"/><col width="99"/><col width="99"/></colgroup><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce1"><p>pmcid</p></td><td style="text-align:left;width:0.889in; " class="ce1"><p>curated_strain</p></td><td style="text-align:left;width:0.889in; " class="ce1"><p>abs_strain</p></td><td style="text-align:left;width:0.889in; " class="ce1"><p>ft_strain</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce1"> </td><td style="text-align:left;width:0.889in; " class="ce1"> </td><td style="text-align:left;width:0.889in; " class="ce1"> </td><td style="text-align:left;width:0.889in; " class="ce1"> </td></tr><tr class="ro2"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC3985880</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>U87MG tumor-bearing mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>U87MG tumor-bearing mice, nude mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4358630</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>EMT6 breast cancer model</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>BALB/c</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro3"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC3211348</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>SCID mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>severe combined immune deficient (SCID) mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC3492114</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Male ddY mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>tumor-bearing mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>tumor-bearing mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC3425121</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>athymic nude mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro4"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC5039679</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>N/A</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4207078</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Kunming mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro3"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4262629</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>U87MG</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>U87MG tumor-bearing mice, female athymic nude...</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro5"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4218929</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>4T1 murine breast tumor-bearing mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>4T1 murine breast tumor-bearing mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro5"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4038837</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>4T1</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>4T1 murine breast cancer model</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC6734012</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>N/A</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>athymic nude female mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro4"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC5102673</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro4"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4550540</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>N/A</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>BALB/c</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro4"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC3625170</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>ICR mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>ICR mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC5197067</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>athymic nude mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC3512544</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>N/A</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>BALB/c nude mice</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro4"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC6462163</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Nude mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>xenograft</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>nude, Balb/C</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro4"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC4747947</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c-nu</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro5"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC7200226</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>4T1 tumor-bearing BALB/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>BALB/c</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:0.889in; " class="ce2"><p>PMC5363536</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>Balb/c mice</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>not specified</p></td><td style="text-align:left;width:0.889in; " class="ce2"><p>BALB/c nu/nu</p></td><td style="text-align:left;width:0.889in; " class="Default"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td><td style="text-align:left;width:0.889in; " class="ce2"> </td></tr></table>
+<table>
+	<tbody>
+		<tr>
+			<td><p>pmcid</p>
+			</td>
+			<td><p>curated_strain</p>
+			</td>
+			<td><p>abs_strain</p>
+			</td>
+			<td><p>ft_strain</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC3985880</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>U87MG tumor-bearing mice</p>
+			</td>
+			<td><p>U87MG tumor-bearing mice, nude mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4358630</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>EMT6 breast cancer model</p>
+			</td>
+			<td><p>BALB/c</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC3211348</p>
+			</td>
+			<td><p>SCID mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>severe combined immune deficient (SCID) mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC3492114</p>
+			</td>
+			<td><p>Male ddY mice</p>
+			</td>
+			<td><p>tumor-bearing mice</p>
+			</td>
+			<td><p>tumor-bearing mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC3425121</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>athymic nude mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC5039679</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>N/A</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4207078</p>
+			</td>
+			<td><p>Kunming mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4262629</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>U87MG</p>
+			</td>
+			<td><p>U87MG tumor-bearing mice, female athymic nude...</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4218929</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>4T1 murine breast tumor-bearing mice</p>
+			</td>
+			<td><p>4T1 murine breast tumor-bearing mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4038837</p>
+			</td>
+			<td><p>mice</p>
+			</td>
+			<td><p>4T1</p>
+			</td>
+			<td><p>4T1 murine breast cancer model</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC6734012</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>N/A</p>
+			</td>
+			<td><p>athymic nude female mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC5102673</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>Balb/c</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4550540</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>N/A</p>
+			</td>
+			<td><p>BALB/c</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC3625170</p>
+			</td>
+			<td><p>ICR mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>ICR mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC5197067</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>athymic nude mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC3512544</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>N/A</p>
+			</td>
+			<td><p>BALB/c nude mice</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC6462163</p>
+			</td>
+			<td><p>Nude mice</p>
+			</td>
+			<td><p>xenograft</p>
+			</td>
+			<td><p>nude, Balb/C</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC4747947</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>Balb/c-nu</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC7200226</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>4T1 tumor-bearing BALB/c mice</p>
+			</td>
+			<td><p>BALB/c</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p>PMC5363536</p>
+			</td>
+			<td><p>Balb/c mice</p>
+			</td>
+			<td><p>not specified</p>
+			</td>
+			<td><p>BALB/c nu/nu</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
 
 
 
