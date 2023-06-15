@@ -251,7 +251,11 @@ Some big issues I see with the approach are:
 	</tbody>
 </table>
 
+# To be done
 
+### BioBERT 
+
+https://huggingface.co/dmis-lab/biobert-base-cased-v1.2
 
 
 **Downloading the data**: it is available as a supplementary material from the article text: https://ars.els-cdn.com/content/image/1-s2.0-S0169409X23000236-mmc1.xlsx
