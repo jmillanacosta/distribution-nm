@@ -1,2 +1,3 @@
 data/perc_id_g_organ.xslx
 notebooks/resources/openAI_key.txt
+notebooks/scripts/__pycache__/*
